@@ -1,24 +1,26 @@
 {
   "name": "button-ds",
-  "version": "1.0.0",
-  "description": "cat",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dreeeewww/button-ds.git"
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Dreeeewww/button-ds/issues"
-  },
-  "homepage": "https://github.com/Dreeeewww/button-ds#readme",
   "devDependencies": {
-    "style-dictionary": "^4.4.0"
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "style-dictionary": "^4.4.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
   }
 }
