@@ -1,0 +1,138 @@
+/* Every value here comes from build/tokens.css. No literals. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: solid;
+  border-width: var(--border-width-control-default);
+  font-family: var(--font-family-mono), monospace;
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-100);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: var(--border-width-200) solid var(--color-border-focus);
+  outline-offset: var(--space-100);
+}
+
+/* ---- sizes ---- */
+
+.btn--sm {
+  padding: var(--space-control-inset-sm-y) var(--space-control-inset-sm-x);
+  gap: var(--space-control-gap-sm);
+  border-radius: var(--radius-control-sm);
+  font-size: var(--font-size-300);
+}
+
+.btn--md {
+  padding: var(--space-control-inset-md-y) var(--space-control-inset-md-x);
+  gap: var(--space-control-gap-md);
+  border-radius: var(--radius-control-md);
+  font-size: var(--font-size-400);
+}
+
+.btn--lg {
+  padding: var(--space-control-inset-lg-y) var(--space-control-inset-lg-x);
+  gap: var(--space-control-gap-lg);
+  border-radius: var(--radius-control-md);
+  font-size: var(--font-size-400);
+}
+
+/* ---- primary ---- */
+
+.btn--primary {
+  background: var(--color-action-bg-primary-default);
+  color: var(--color-action-text-primary-default);
+  border-color: var(--color-action-border-primary-default);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--color-action-bg-primary-hover);
+  color: var(--color-action-text-primary-hover);
+  border-color: var(--color-action-border-primary-hover);
+}
+
+.btn--primary:active:not(:disabled) {
+  background: var(--color-action-bg-primary-active);
+  color: var(--color-action-text-primary-active);
+  border-color: var(--color-action-border-primary-active);
+}
+
+.btn--primary:disabled {
+  background: var(--color-action-bg-primary-disabled);
+  color: var(--color-action-text-primary-disabled);
+  border-color: var(--color-action-border-primary-disabled);
+}
+
+/* ---- secondary ---- */
+
+.btn--secondary {
+  background: var(--color-action-bg-secondary-default);
+  color: var(--color-action-text-secondary-default);
+  border-color: var(--color-action-border-secondary-default);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--color-action-bg-secondary-hover);
+  color: var(--color-action-text-secondary-hover);
+  border-color: var(--color-action-border-secondary-hover);
+}
+
+.btn--secondary:active:not(:disabled) {
+  background: var(--color-action-bg-secondary-active);
+  color: var(--color-action-text-secondary-active);
+  border-color: var(--color-action-border-secondary-active);
+}
+
+.btn--secondary:disabled {
+  background: var(--color-action-bg-secondary-disabled);
+  color: var(--color-action-text-secondary-disabled);
+  border-color: var(--color-action-border-secondary-disabled);
+}
+
+/* ---- danger ---- */
+
+.btn--danger {
+  background: var(--color-action-bg-danger-default);
+  color: var(--color-action-text-danger-default);
+  border-color: var(--color-action-border-danger-default);
+}
+
+.btn--danger:hover:not(:disabled) {
+  background: var(--color-action-bg-danger-hover);
+  color: var(--color-action-text-danger-hover);
+  border-color: var(--color-action-border-danger-hover);
+}
+
+.btn--danger:active:not(:disabled) {
+  background: var(--color-action-bg-danger-active);
+  color: var(--color-action-text-danger-active);
+  border-color: var(--color-action-border-danger-active);
+}
+
+.btn--danger:disabled {
+  background: var(--color-action-bg-danger-disabled);
+  color: var(--color-action-text-danger-disabled);
+  border-color: var(--color-action-border-danger-disabled);
+}
+
+/* ---- icon ---- */
+
+.btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__icon svg {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
