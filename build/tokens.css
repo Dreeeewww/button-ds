@@ -29,6 +29,7 @@
   --color-gray-400: #acacac;
   --color-gray-500: #888888;
   --color-gray-700: #3d3d3d;
+  --color-gray-800: #2d2d2d;
   --color-red-200: #ffe5e5;
   --color-red-300: #ffaeae;
   --color-red-400: #e62c2c;
@@ -82,6 +83,12 @@
   --border-radius-500: 16px;
   --font-size-300: 16px;
   --font-size-400: 18px;
+  --sizing-300: 16px;
+  --sizing-400: 20px;
+  --sizing-500: 24px;
+  --sizing-control-icon-sm: 16px;
+  --sizing-control-icon-md: 20px;
+  --sizing-control-icon-lg: 24px;
   --font-family-mono: JetBrains Mono;
   --line-height-100: 100%;
   --line-height-200: 120%;

@@ -11,6 +11,8 @@
   font-family: var(--font-family-mono), monospace;
   font-weight: var(--font-weight-700);
   line-height: var(--line-height-100);
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 .btn:disabled {
@@ -41,7 +43,7 @@
 .btn--lg {
   padding: var(--space-control-inset-lg-y) var(--space-control-inset-lg-x);
   gap: var(--space-control-gap-lg);
-  border-radius: var(--radius-control-md);
+  border-radius: var(--radius-control-lg);
   font-size: var(--font-size-400);
 }
 
@@ -132,7 +134,20 @@
 }
 
 .btn__icon svg {
-  width: 1em;
-  height: 1em;
   display: block;
+}
+
+.btn--sm .btn__icon svg {
+  width: var(--sizing-control-icon-sm);
+  height: var(--sizing-control-icon-sm);
+}
+
+.btn--md .btn__icon svg {
+  width: var(--sizing-control-icon-md);
+  height: var(--sizing-control-icon-md);
+}
+
+.btn--lg .btn__icon svg {
+  width: var(--sizing-control-icon-lg);
+  height: var(--sizing-control-icon-lg);
 }

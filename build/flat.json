@@ -122,6 +122,10 @@
       "700": {
         "$type": "color",
         "$value": "#3d3d3d"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#2d2d2d"
       }
     },
     "red": {
@@ -373,6 +377,36 @@
     "400": {
       "$type": "fontSizes",
       "$value": "18"
+    }
+  },
+  "sizing": {
+    "300": {
+      "$type": "sizing",
+      "$value": "16"
+    },
+    "400": {
+      "$type": "sizing",
+      "$value": "20"
+    },
+    "500": {
+      "$type": "sizing",
+      "$value": "24"
+    },
+    "control": {
+      "icon": {
+        "sm": {
+          "$type": "sizing",
+          "$value": "{sizing.300}"
+        },
+        "md": {
+          "$type": "sizing",
+          "$value": "{sizing.400}"
+        },
+        "lg": {
+          "$type": "sizing",
+          "$value": "{sizing.500}"
+        }
+      }
     }
   },
   "font-family": {
